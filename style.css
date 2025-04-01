@@ -1,0 +1,153 @@
+body {
+    margin:0;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #949199;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-list {
+    list style-type: none;
+    width: 100%;
+    margin: 0 auto; 
+    padding: 10px;
+}   
+
+.task {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 1px 0;
+    
+}
+
+.todo-list > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.edit {
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(59, 86, 99);
+    height: 20px;
+    width: 30px;
+    font-size: 13px;
+    padding: 0;
+    transition: 0.2s;
+}
+
+.delete, .done{
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(59, 86, 99);
+    height: 17px;
+    width: 17px;
+    font-size: 10px;
+    padding: 0;
+    transition: 0.2s;
+}
+
+.done:hover  {
+    border: 1px solid rgb(101, 158, 127);
+    background-color: rgb(210, 217, 218);
+}
+
+.delete:hover{
+    border: 1px solid rgb(158, 101, 107);
+    background-color: rgb(218, 210, 214);
+}
+
+.edit:hover{
+    border: 1px solid rgb(127, 101, 158);
+    background-color: rgb(218, 210, 214);
+}
+
+.task > div, .task >  button {
+    padding-right: 10px;
+
+}
+
+#buttonContainer {
+    margin-top: 10px;
+}
+
+#addButton {
+    background-color: rgb(203, 219, 240);
+    border: rgb(108, 176, 240);
+    border-radius: 40px;
+    padding: 5px 20px; /*verh pravo niz levo*/
+    transition: 0.3s;
+    
+}
+
+#addButton:hover {
+    background-color: rgb(117, 146, 207);
+    border: 1px blue;
+}
+#sortDate {
+    background-color: rgb(159, 235, 175);
+    border: rgb(136, 212, 143);
+    border-radius: 40px;
+    padding: 5px 20px;
+    transition: 0.3s;
+    
+}
+
+#sortDate:hover {
+    background-color: rgb(95, 194, 116);
+    border: 1px rgb(84, 161, 117);
+}
+
+.done-task {
+    background-color: rgb(212, 236, 212);
+}
+
+.low-priority {
+    background-color: rgb(219, 243, 240);
+}
+
+.medium-priority {
+    background-color: rgb(240, 240, 224);
+}
+
+.high-priority {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(245, 228, 226);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.25rem; 
+}

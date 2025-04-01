@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="tod.js" defer></script>
+    <title>Todo</title>
+</head>
+<body>
+    <div id="main">
+        <div id="inputContainer">
+            <label for="title">title</label>
+            <input type="text" id="title">
+
+            <label for="description">description</label>
+            <input type="text" id="description">
+
+            <label for="date">date</label>
+            <input type="date" id="date">
+            <label for="priority">priority level</label>
+            <select name="priority" id="priority">
+                <option value="high">high</option>
+                <option value="medium">medium</option>
+                <option value="low">low</option>
+            </select>
+        </div>
+        <div id="buttonContainer">
+            <button id="addButton">ADD</button>
+            <button id="sortDate">SORT BY DATE</button>
+        </div>
+        <div id="taskList">
+            Taske pole
+        </div>
+    </div>
+</body>
+</html>
